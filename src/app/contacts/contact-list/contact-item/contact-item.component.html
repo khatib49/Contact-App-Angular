@@ -1,0 +1,22 @@
+<a routerLink="/contact-details/{{contact?.id}}" id="cd">
+<div class="contact">
+<!-- <div (click)="saveItem()"> -->
+
+    <div class="contact-img">
+        <img src="{{contact?.image}}" height="40px">
+    </div>
+    <div class="contact-details">
+            <div class="contact-name">
+                {{contact?.name}}
+            </div>
+            {{contact?.phone}}
+    </div>
+    <div class="btn">
+    <div class="btn1">
+        <a routerLink="/edit/{{contact?.id}}"><i class="fa fa-pencil" style="font-size:24px;color: green;"></i></a>
+    </div>
+        <i  class="material-icons" style="font-size:24px;color: red;" (click)="removeContact(contact?.id)">delete</i>
+</div>
+<!-- </div> -->
+</div>
+</a>

@@ -1,0 +1,38 @@
+.contact {
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.contact-img img {
+    width: 6 0px;
+    border-radius: 50%;
+}
+
+.contact-details {
+    margin-left: 15px;
+}
+
+.contact-name {
+    padding: 10px;
+    font-size: 29px;
+    font-family: fantasy;
+}
+.contact-phone {
+    margin-top: 10px;
+}
+.contact-bd {
+    margin-top: 10px;
+}
+.contact-email {
+    margin-top: 10px;
+}
+.contact-web {
+    margin-top: 10px;
+}
+.details{
+    font-size: 20px;
+    margin-top: 20px;
+}
+

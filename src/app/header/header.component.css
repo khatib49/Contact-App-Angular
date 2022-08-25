@@ -1,0 +1,17 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 0.925);
+}
+.tittle{
+    color: white;
+    text-align: left;
+    font-family:Bradley Hand, cursive;
+    font-size: 55px;
+}
+#btn{
+    margin-left:auto ;
+}

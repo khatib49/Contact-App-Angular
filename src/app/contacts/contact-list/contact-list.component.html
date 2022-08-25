@@ -1,0 +1,5 @@
+<div class="list">
+    <div *ngFor="let item of contacts" >
+        <app-contact-item [contact]="item" (onClick)="save($event)"></app-contact-item>
+    </div>
+</div>

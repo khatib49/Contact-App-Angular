@@ -1,0 +1,35 @@
+#cd{
+    text-decoration:none;
+    color: rgb(16, 15, 15);
+}
+.contact {
+    border-radius: 5%;
+    display: flex;
+    border: 2px solid #e6e6e6;
+    flex-direction: row;
+    padding: 15px;
+}
+.contact:hover {
+    background-color: #cdcdcd;
+}
+
+.contact-img img {
+    width: 6 0px;
+    border-radius: 50%;
+}
+
+.contact-details {
+    margin-left: 15px;
+}
+
+.contact-name {
+    font-size: 16px;
+    font-family: fantasy;
+}
+.btn{
+    margin-left: auto;
+}
+.btn:hover{
+    border: none;
+}
+

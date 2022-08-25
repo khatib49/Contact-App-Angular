@@ -1,0 +1,30 @@
+
+
+
+
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" placeholder="Name" formControlName="name" >
+        <!-- <span style="color: red;" *ngIf="name.invalid"> This input is not valid</span>  -->
+        <label class="form-label">Phone Number</label>
+        <input class="form-control" formControlName="phone"  placeholder="Phone Number">
+
+        <label for=" " class="form-label">Image</label>
+        <input type="text" class="form-control" formControlName="image" placeholder="Image">
+        
+        <label class="form-label">Email</label>
+        <input class="form-control" formControlName="email"  placeholder="Phone Number">
+
+        <label class="form-label">Address</label>
+        <input class="form-control" formControlName="address"  placeholder="Phone Number">
+
+      </div>
+      <br>
+      <button type="Submit" class="btn btn-success" [disabled]="!contactForm.valid">Save</button>
+</form>
+<div *ngIf="errormsg" class="alert alert-warning" rola="alert">
+  {{errormsg}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>

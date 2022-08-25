@@ -1,0 +1,31 @@
+<app-header></app-header>
+<br>
+
+<div class="contact">
+        <div class="contact-img">
+            <img src="{{contact?.image}}" height="350px">
+        </div>
+        <div class="contact-details">
+                <div class="contact-name">
+                    {{contact?.name}}
+                </div>
+                <div class="details">
+                <div class="contact-phone">
+                   <b>Phone:</b> {{contact?.phone}}
+                </div>
+                <div class="contact-email">
+                    <b>Email:</b> {{contact?.email}}
+                </div>
+                <div class="contact-bd">
+                    <b>Birthday</b>  {{contact?.birthday}}
+                </div>
+                <div class="contact-web">
+                    <b>Website:</b> {{contact?.website}}
+                </div>
+                <div class="contact-web">
+                    <a routerLink="/edit/{{contact?.id}}"><button class="btn btn-success">Update</button></a> &nbsp;
+                    <button class="btn btn-danger" (click)="removeContact(contact?.id)">Delete</button>
+                </div>
+            </div>
+        </div>
+</div>
